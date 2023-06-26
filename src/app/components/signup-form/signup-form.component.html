@@ -1,0 +1,70 @@
+<!-- <div class="header border-bottom bg-dark">
+    <header class="d-flex flex-wrap py-3 mb-4 " style="justify-content: space-between;">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img class="bi" width="100" height="32" role="img"  src="assets/img/acBlog.jpg" alt="Img not Found" >
+        </a>
+      </div>
+      <div class="col-md-3 text-end text-white">
+        <span><strong>AC-Blog Login </strong></span>
+      </div>
+    </header>
+  </div>
+  <div class="container align-items-center " style="height: 80vh;">
+    <h2 id="h2">Login Form</h2>
+  <form #myform="ngForm" class="border border-primary my-4" style="padding: 30px;border-radius: 10px;" (ngSubmit)="getdata(myform.value)" >
+    <div class="form-group ">
+      <label  >Enter Username</label>
+      <input type="text" class="form-control" name="username" #username="ngModel" pattern="[a-zA-Z0-9]{5,20}" [(ngModel)]="username" ngModel required>
+      <div *ngIf="username.invalid  && username.touched">
+        <div class="alert alert-danger" *ngIf="username.errors?.['required']">username Cannot be empty*</div>
+        <div class="alert alert-danger" *ngIf="username.errors?.['pattern']">Invalid username</div>
+      </div>
+    </div>
+    <div class="form-group my-2">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" name="password" #password="ngModel" pattern="[a-zA-Z@$&*#0-9]{3,20}" [(ngModel)]="password" ngModel required>
+      <div *ngIf="password.invalid  && password.touched">
+        <div class="alert alert-danger" *ngIf="password.errors?.['required']">password Cannot be empty*</div>
+        <div class="alert alert-danger" *ngIf="password.errors?.['pattern']">Invalid password</div>
+      </div>
+    </div>
+    <div class="text-center">
+    <button type="submit" class="btn btn-success btn-block my-3 " style="padding-left: 30px;padding-right: 30px;" [disabled]="myform.invalid" (click)="login()">Login</button>
+    </div>
+
+  </form>
+</div>
+  <div class="Footer  border-top bg-dark text-white">
+    <span> <strong> AC-Blog &copy; 2023</strong></span>
+</div> -->
+<div class="header border-bottom bg-dark">
+  <header class="d-flex flex-wrap py-3 mb-4 " style="justify-content: space-between;">
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img class="bi" width="100" height="32" role="img"  src="assets/img/acBlog.jpg" alt="Img not Found" >
+      </a>
+    </div>
+    <div class="col-md-3 text-end text-white">
+      <span><strong>AC-Blog Login </strong></span>
+    </div>
+  </header>
+</div>
+<div class="loginbox ">
+  <form class="forms" >
+      <h2 id="h2">Login Here</h2>
+      <label for="">Enter Your Username</label>
+      <input type="text" name="username" placeholder="username" class="form-control my-2 "  [(ngModel)]="username" >
+  
+      <label for="">Enter Password</label>
+      <input type="password" name="password" id="pass" placeholder="password...." class="form-control my-2" [(ngModel)]="password">
+  
+      <div class=" d-grid gap-2 col-3 mx-auto">
+      <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+  </div>
+  </form>
+  
+  </div>
+<div class="Footer  border-top bg-dark text-white">
+  <span> <strong> AC-Blog &copy; 2023</strong></span>
+</div> 

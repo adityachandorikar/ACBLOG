@@ -1,0 +1,41 @@
+
+    <form class="forms" #myform="ngForm" (ngSubmit)="getdata(myform.value)">
+        <div class="form-group border border-primary my-2 mx-4">
+    <h2>My Blog</h2>
+    <hr>
+    <div class="row ">
+        <div class="col col-sm-7 ">
+            <label >Select Category For Blog</label>
+            <select class="form-control "name="category"  #category="ngModel" ngModel required>
+                <option value="science">Science</option>
+                <option value="technology">Technology</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="health">Health</option>
+                <option value="travel">Travel</option>
+            </select>
+            <div *ngIf="category.invalid && category.touched">
+                <div *ngIf="category.errors?.['required']" style="color: red;">Please select Category*</div>
+            </div>
+        </div>
+        <div class="col col-sm-7 my-2">
+        <label>Enter Title for blog</label>
+        <input type="text" name="title" class="form-control" #title="ngModel" ngModel required>
+        <div *ngIf="title.invalid && title.touched">
+            <div *ngIf="title.errors?.['required']" style="color: red;">Title Cannot be empty*</div>
+        </div>
+    </div>
+        </div>
+    <div class="row">
+        <div class="col col-sm-7">
+      <label >Write your blog here</label>
+      <textarea class="form-control " name="content" rows="6" #content="ngModel" ngModel required></textarea>
+        <div *ngIf="content.invalid && content.touched">
+            <div *ngIf="content.errors?.['required']" style="color: red;">Please fill the blog content*</div>
+        </div>  
+    </div>
+       <div class="col col-sm-7 my-2 text-center">
+        <button type="submit" class="btn btn-outline-success" [disabled]="myform.invalid">submit</button>
+       </div>
+    </div>
+        </div>
+</form>

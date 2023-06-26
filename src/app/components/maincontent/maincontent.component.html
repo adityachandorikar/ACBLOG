@@ -1,0 +1,70 @@
+<div class="nav-scroller py-1 mb-2 mx-2">
+	<nav class="nav d-flex justify-content-between">
+		<a class="p-2 text-muted" routerLink="science">Science</a>
+	    <a class="p-2 text-muted" routerLink="technology">Technology</a>
+		<a class="p-2 text-muted" routerLink="health">Health</a>
+		<a class="p-2 text-muted" routerLink="travel">Travel</a>
+	</nav>
+</div>
+
+<ngb-carousel>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img class="setsize" src="assets/img/nasa.jpg" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>James Webb space telescope captures new images of cosmos</h3>
+			
+		
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img class="setsize" src="assets/img/volcano1.jpg" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>'Like a shotgun'</h3>
+			<p>Tonga’s volcano was the biggest eruption ever recorded</p>
+		
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img class="setsize" src="assets/img/train1.png" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3 style="color: rgb(219, 241, 15);">India To Get First Hydrogen Powered Train Next Independence Day</h3>
+		
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img class="setsize" src="assets/img/health1.jpg" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>Sickle Cell Anaemia Disease</h3>
+			<p>Government releases standard treatment guidelines for Sickle Cell Anaemia Disease</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img class="setsize" src="assets/img/travel1.jpg" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>GANESH CHATURTHI PUNE 2022</h3>
+		
+		</div>
+	</ng-template>
+</ngb-carousel>
+<div class="card" *ngFor="let d of carddata">
+	<div class="card-header">
+		{{d.category}}
+	</div>
+	<div class="card-body">
+		<h5 class="card-title">{{d.title}}</h5>
+		<p class="card-text">{{d.content}}</p>
+		<button type="button" class="btn btn-warning" [routerLink]="['edit',d.id]"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit</button>
+		<button type="button" class="btn btn-danger mx-2" (click)="delete('blogs',d.id)"><i class="fa fa-trash"aria-hidden="true"></i> Delete</button>
+
+	</div>
+</div>

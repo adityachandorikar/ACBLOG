@@ -1,0 +1,212 @@
+{
+  "login": [
+    {
+      "id": 101,
+      "username": "aditya1",
+      "password": "aditya1"
+    },
+    {
+      "id": 102,
+      "username": "atul1",
+      "password": "atul1234"
+    },
+    {
+      "id": 103,
+      "username": "sachin1",
+      "password": "sachin123"
+    },
+    {
+      "id": 104,
+      "username": "ramsharma1",
+      "password": "ram12345"
+    },
+    {
+      "username": "akanksha1",
+      "password": "akanksha1",
+      "id": 105
+    },
+    {
+      "username": "thesimpleman",
+      "password": "shantanu",
+      "id": 106
+    },
+    {
+      "username": "atul1",
+      "password": "12345678",
+      "id": 107
+    }
+  ],
+  "registration": [
+    {
+      "id": 101,
+      "fname": "Aditya",
+      "lname": "Chandorikar",
+      "emailid": "aditya@gmail.com",
+      "contact": "9023543890",
+      "username": "aditya1",
+      "password": "aditya1",
+      "gender": "male",
+      "dob": "02/02/2000"
+    },
+    {
+      "fname": "Atul",
+      "lname": "More",
+      "emailid": "atul@gmail.com",
+      "contact": "9876584931",
+      "username": "atul1",
+      "password": "atul1234",
+      "gender": "male",
+      "dob": "2017-01-02",
+      "id": 102
+    },
+    {
+      "fname": "Sachin",
+      "lname": "Gupta",
+      "emailid": "sachin@gmail.com",
+      "contact": "8877454510",
+      "username": "sachin1",
+      "password": "sachin123",
+      "gender": "male",
+      "dob": "2000-03-09",
+      "id": 103
+    },
+    {
+      "fname": "Ram",
+      "lname": "Sharma",
+      "emailid": "ram@gmail.com",
+      "contact": "7878695410",
+      "username": "ramsharma1",
+      "password": "ram12345",
+      "gender": "male",
+      "dob": "2002-10-23",
+      "id": 104
+    },
+    {
+      "fname": "Akanksha",
+      "lname": "sharma",
+      "emailid": "akanksha@gmail.com",
+      "contact": "9988556632",
+      "username": "akanksha1",
+      "password": "akanksha1",
+      "gender": "female",
+      "dob": "2002-04-30",
+      "id": 105
+    },
+    {
+      "fname": "shantanu",
+      "lname": "Chandorikar",
+      "emailid": "shantu@123",
+      "contact": "7878695410",
+      "username": "thesimpleman",
+      "password": "shantanu",
+      "gender": "male",
+      "dob": "2002-03-16",
+      "id": 106
+    },
+    {
+      "fname": "Atul",
+      "lname": "Moree",
+      "emailid": "test11@gmail.com",
+      "contact": "9888811122",
+      "username": "atul1",
+      "password": "12345678",
+      "gender": "male",
+      "dob": "2023-06-07",
+      "id": 107
+    }
+  ],
+  "blogs": [
+    {
+      "category": "science",
+      "title": "Tonga’s volcano - the biggest eruption ever recorded",
+      "content": "A deadly volcanic eruption near Tonga in January was the largest ever recorded with modern equipment, a New Zealand-led team of scientists revealed Monday.\nThe Hunga Tonga-Hunga Ha'apai volcano erupted underwater with a force equivalent to hundreds of atomic bombs, unleashing a 15-metre (50-foot) tsunami which demolished homes and killed at least three people on the Pacific island kingdom.\nThe natural disaster also damaged undersea communication cables, cutting Tonga off from the rest of the world for weeks and hampering efforts to help the victims.\n",
+      "id": 101
+    },
+    {
+      "category": "health",
+      "title": "Government releases standard treatment guidelines for Sickle Cell Anaemia Disease",
+      "content": "Dr. Bharati Praveen Pawar, Minister of State for Health and Family Welfare of India, on Monday, released the standard treatment guidelines for Sickle Cell Anaemia Disease.\nSickle Cell Anaemia Disease is a group of inherited disorders that cause red blood cells to become misshapen and break down.\nThese guidelines have been prepared by the Indian Council of Medical Research (ICMR). According to the guidelines, the following group will be screened to detect Sickle Cell Anemia Diseases:\nAntenatal Mothers or pre-pregnancy planning\nNewborn\nPopulation screening/patient of any age\nThe guidelines also involve how to conduct medical disease counselling, genetic counselling, preconception care counselling, pre and post-test support to the family and cascade screening.",
+      "id": 102
+    },
+    {
+      "category": "travel",
+      "title": "GANESH CHATURTHI PUNE 2022 | FIRST DAY CELEBRATIONS IN PUNE OLD CITY",
+      "content": "As the cultural capital of Maharashtra, Pune is specially significant because the Ganesh Chaturthi celebrations actually started here.\nThe main Five Ganpati pandal\nNow there are hundreds of Ganesha idols which are part of the procession and celebrations, but there are five main ones which are the most important and most prestigious. These top five are known as Manache Ganpati.\nKasba Ganpati\nTambadi Jogeshwari Ganpati\nGuruji Talim Ganapati\nTulshibagh Ganpati\nKesariwada Ganpati",
+      "id": 103
+    },
+    {
+      "category": "technology",
+      "title": "Blockchain technology ",
+      "content": "Most of the time, people face a lot of confusion about blockchain and cryptocurrency. Although, blockchain is simply different. Blockchain basically facilitates high-end security to the info that proves to be extremely beneficial in one or the other way. If we explain it in simple words, blockchain is generally considered a system of recording something that gets the chance to be hacked or manipulated. ",
+      "id": 104
+    },
+    {
+      "id": 105,
+      "category": "technology",
+      "title": "India To Get First Hydrogen Powered Train Next Independence Day",
+      "content": "The first hydrogen-powered train in the world was introduced in Germany last month. \nAshwini Vaishnav, Minister of Railways, Communications and Electronics & Information Technology in Government of India, stated, “India has been able to build trains which are among the best in the world and the next big thing will be when the hydrogen-powered train is rolled out on August 15, 2023.”\nAccording to the minister, a train built at the Integral Coach Factory (ICF) in Chennai was recently named one of the top five trains in the world.\nIt moved at a speed of 180 kilometres per hour, astounded the world.\n"
+    }
+  ],
+  "science": [
+    {
+      "category": "science",
+      "title": "Tonga’s volcano - the biggest eruption ever recorded",
+      "content": "A deadly volcanic eruption near Tonga in January was the largest ever recorded with modern equipment, a New Zealand-led team of scientists revealed Monday.\nThe Hunga Tonga-Hunga Ha'apai volcano erupted underwater with a force equivalent to hundreds of atomic bombs, unleashing a 15-metre (50-foot) tsunami which demolished homes and killed at least three people on the Pacific island kingdom.\nThe natural disaster also damaged undersea communication cables, cutting Tonga off from the rest of the world for weeks and hampering efforts to help the victims.\n",
+      "id": 101
+    }
+  ],
+  "technology": [
+    {
+      "category": "technology",
+      "title": "Blockchain technology ",
+      "content": "Most of the time, people face a lot of confusion about blockchain and cryptocurrency. Although, blockchain is simply different. Blockchain basically facilitates high-end security to the info that proves to be extremely beneficial in one or the other way. If we explain it in simple words, blockchain is generally considered a system of recording something that gets the chance to be hacked or manipulated. ",
+      "id": 101
+    },
+    {
+      "category": "technology",
+      "title": "The virtual reality ",
+      "content": "The next impressive technology in our list that has been exclusively famous in the year 2021 is augmented reality or we can say virtual reality. Virtual Reality (VR) can be considered a technology that mostly gets utilized in gaming tools such as Play stations. With the help of this great platform, the user enjoys the virtual game in the real world by entering into the sport virtually",
+      "id": 102
+    },
+    {
+      "category": "technology",
+      "title": "Airports for drones and flying taxis",
+      "content": "It is not a lesser-known fact that the cities around the world are in critical need of fresh and breathable air in their environment. And in the near future, it will be possible only through the help of the air and not by the roads. Acquiring the funding all the way from the UK, it is being planned to create a special transport hub entirely for delivering drones and also for electric air taxis.\nBacked by an off-grid hydrogen generator, the actual plan of the creators is to get rid of the necessity of delivering vans and private cars on the roads, and that too by replacing them with a clean alternative.\n",
+      "id": 103
+    },
+    {
+      "category": "technology",
+      "title": " Artificial Intelligence (AI)",
+      "content": "Certainly, there is no need to explain how the implementation of Artificial Intelligence gives a hike to the performance, reliability, and scalability of a business. AI has got the status of being the fourth technological revolution across the globe. But unfortunately, there always occur some situations where AI creates some kind of issues that instantly becomes a challenge for the corporate world.\nAI Engineering considers AI as a neighborhood of a mainstream process rather than specialized projects. Taking the help of AI, all the issues of governance, scalability, and maintainability become solved. Hence, this technology has all the potential to bring a replacement revolution to the table.\n",
+      "id": 104
+    },
+    {
+      "category": "technology",
+      "title": "Living robots",
+      "content": "Tiny hybrid robots made by using stem cells from frog embryos can swim around human bodies to specific areas requiring medicine or collect microplastic within the oceans. Joshua Bongard quotes on this invention, “These are novel living machines.” He is not only a scientist and robotics expert at the University of Vermont but also has co-developed the millimeter-wide bots referred to as xenobiotics. ",
+      "id": 105
+    }
+  ],
+  "health": [
+    {
+      "category": "health",
+      "title": "Symptomatic long COVID may lead to memory issues; here’s how",
+      "content": "A new study has revealed that symptomatic long COVID may be associated with self-perceived cognitive difficulties such as memory problems. Long COVID is described as experiencing persistent symptoms of the disease more than four weeks after initial infection.\n\nResearchers at the University of California, Los Angeles (UCLA) in the US noted that over one in three people experiencing long COVID symptoms perceived such cognitive deficits, which have been found to be related to anxiety and depression.",
+      "id": 101
+    },
+    {
+      "category": "health",
+      "title": "Government releases standard treatment guidelines for Sickle Cell Anaemia Disease",
+      "content": "Dr. Bharati Praveen Pawar, Minister of State for Health and Family Welfare of India, on Monday, released the standard treatment guidelines for Sickle Cell Anaemia Disease.\nSickle Cell Anaemia Disease is a group of inherited disorders that cause red blood cells to become misshapen and break down.\nThese guidelines have been prepared by the Indian Council of Medical Research (ICMR). According to the guidelines, the following group will be screened to detect Sickle Cell Anemia Diseases:\nAntenatal Mothers or pre-pregnancy planning\nNewborn\nPopulation screening/patient of any age\nThe guidelines also involve how to conduct medical disease counselling, genetic counselling, preconception care counselling, pre and post-test support to the family and cascade screening.",
+      "id": 102
+    }
+  ],
+  "travel": [
+    {
+      "category": "travel",
+      "title": "GANESH CHATURTHI PUNE 2022 | FIRST DAY CELEBRATIONS IN PUNE OLD CITY",
+      "content": "As the cultural capital of Maharashtra, Pune is specially significant because the Ganesh Chaturthi celebrations actually started here.\nThe main Five Ganpati pandal\nNow there are hundreds of Ganesha idols which are part of the procession and celebrations, but there are five main ones which are the most important and most prestigious. These top five are known as Manache Ganpati.\nKasba Ganpati\nTambadi Jogeshwari Ganpati\nGuruji Talim Ganapati\nTulshibagh Ganpati\nKesariwada Ganpati",
+      "id": 101
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+<div class="header border-bottom bg-dark">
+    <header class="d-flex flex-wrap py-3 mb-4 " style="justify-content: space-between;">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img class="bi" width="100" height="32" role="img"  src="assets/img/acBlog.jpg" alt="Img not Found" >
+        </a>
+      </div>
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-primary" (click)="signup()"><i class="fa fa-sign-in" aria-hidden="true"></i> login</button>
+      </div>
+    </header>
+  </div>
+<div class="container ">
+<div class="card card-header my-4">
+    <h2 id="h2">Registration Form</h2>
+</div>
+<div class=" card card-body border-primary my-2">
+<form [formGroup]="userdata" (ngSubmit)="getdata(userdata.value)">
+<div class="row my-2">
+    <div class="col-sm-6">
+        <label >Enter First Name</label>
+        <input type="text" class="form-control" formControlName="fname" name="fname" placeholder="First">
+        <div  *ngIf="userdata.get('fname').invalid && userdata.get('fname').touched ">
+            <div *ngIf="userdata.get('fname').errors.required" style="color: red;">First Name is Reqiured*</div>
+            <div *ngIf="userdata.get('fname').errors.pattern">Invalid Name *</div>
+
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <label >Enter Last Name</label>
+       <input type="text" class="form-control" formControlName="lname" placeholder="last">
+       <div *ngIf="userdata.get('lname').invalid && userdata.get('lname').touched">
+        <div *ngIf="userdata.get('lname').errors.required" style="color: red;">Last Name is required*</div>
+        <div *ngIf="userdata.get('lname').errors.pattern" style="color: red;">Invalid Lastname</div>
+       </div>
+    </div>
+</div>
+<div class="row my-2">
+    <div class="col-sm-6">
+        <label >Email Id</label>
+        <input type="email" name="emailid" class="form-control" formControlName="emailid" placeholder="abc@gmail.com">
+        <div *ngIf="userdata.get('emailid').invalid && userdata.get('emailid').touched">
+            <div *ngIf="userdata.get('emailid').errors.required" style="color: red;">Email Id cannot be Empty*</div>
+            <div *ngIf="userdata.get('emailid').errors.email" style="color: red;">Invalid Email Id</div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <label >Contact No</label>
+        <input type="tel" class="form-control" formControlName="contact" name="contact" placeholder="9999999999">
+        <div *ngIf="userdata.get('contact').invalid && userdata.get('contact').touched">
+            <div *ngIf="userdata.get('contact').errors.required" style="color: red;">Contact Cannot be Empty*</div>
+            <div *ngIf="userdata.get('contact').errors.pattern" style="color: red;">Invalid Contact No</div>
+            <div *ngIf="userdata.get('contact').errors.minlength" style="color: red;">Minimum 10 digits required*</div>
+            <div *ngIf="userdata.get('contact').errors.maxlength" style="color: red;">Contact no Cannot Exceed More than 10 digits</div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <label >Create a new USERNAME</label>
+        <input type="text" name="username" class="form-control" formControlName="username" placeholder="user1">
+        <div *ngIf="userdata.get('username').invalid && userdata.get('username').touched">
+            <div *ngIf="userdata.get('username').errors.required"style="color: red;"> Username Cannot be Empty*</div>
+            <div *ngIf="userdata.get('username').errors.pattern"style="color: red;">Invalid Username</div>
+        </div>
+
+
+    </div>
+    <div class="col-sm-6">
+        <label>Enter your Password</label>
+        <input type="password" name="password" formControlName="password" class="form-control">
+        <div style="color: red;" *ngIf="userdata.get('password').invalid && userdata.get('password').touched">
+            <div *ngIf="userdata.get('password').errors.required">
+                Password Cannot be empty*
+            </div>
+            <div *ngIf="userdata.get('password').errors.pattern">
+                Password should be atleast 8 characters long
+                and should contain one number,one character and one special
+                character
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row my-2">
+    <div class="col-sm-6 my-3">
+        <label class="form-check-label m-2">Gender 
+            <input class="form-check-input mx-1 "type="radio" name="gender" id="m"value="male" formControlName="gender" >Male
+            <input class="form-check-input mx-1" type="radio" name="gender" id="f"value="female" formControlName="gender">Female
+            <input class="form-check-input mx-1" type="radio" name="gender" id="0"value="other" formControlName="gender">Other
+</label>
+   <div *ngIf="userdata.get('gender').invalid && userdata.get('gender').touched">
+    <div *ngIf="userdata.get('gender').errors.required" style="color: red;">Gender not selected</div>
+   </div>
+    </div>
+    <div class="col-sm-6">
+        <label >Date of Birth</label>
+        <input type="date" class="form-control" formControlName="dob" name="dob">
+        <div *ngIf="userdata.get('dob').invalid && userdata.get('dob').touched">
+            <div *ngIf="userdata.get('dob').errors.required" style="color: red;">Date of birth not selected</div>
+           </div>
+    </div>
+</div>
+<div class="row">
+<button type="submit" class="btn btn-primary btn-lg btn-block " [disabled]="userdata.invalid" onclick="alert('please remember your USERNAME and PASSWORD for future reference')">Register</button>
+
+</div>
+</form>
+</div>
+</div>
+<div class="Footer  border-top bg-dark text-white">
+    <span> <strong> AC-Blog &copy; 2023</strong></span>
+</div>

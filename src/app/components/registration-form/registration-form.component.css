@@ -1,0 +1,11 @@
+#h2{
+    text-align: center;
+    color: darkgreen;
+}
+.Footer{
+    bottom: 0;
+    height: 150px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
